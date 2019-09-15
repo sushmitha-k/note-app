@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Note Taking App</title>
+  <meta name="description" content="A minimal note application using Vanilla JavaScript.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="note-container">
+    <h1>Note Taking App</h1>
+    <form>
+      <input id="formNoteTitle" type="text" placeholder="Title">
+      <textarea name="formNoteText" id="formNoteText" placeholder="Write your notes here"cols="50" rows="8"></textarea>
+      <select name="formColor" id="formColor">
+        <option value="none">Select color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select>
+      <button id="formAddButton">Add note</button>
+    </form>
+  </div>
+  <div class="emptystate">
+    <h5>Create your first Note</h5>
+  </div>
+  <div id="notes">
+    <input id="search" type="text" placeholder="search notes"/>
+  </div>
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script src="app.js"></script>
+</body>
+</html>
